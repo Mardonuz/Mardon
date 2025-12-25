@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Mardon Media</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>MARDON MEDIA</h1>
+  <p>Kino va media platforma</p>
+</header>
+
+<div class="stats">
+  👁 Ko‘rishlar: <span id="views">0</span> |
+  ⬇ Yuklashlar: <span id="downloads">0</span>
+</div>
+
+<div class="filter">
+  <select id="categoryFilter" onchange="renderMovies()">
+    <option value="all">Barcha kategoriyalar</option>
+  </select>
+</div>
+
+<section class="movies" id="movies"></section>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>Admin | Mardon Media</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="admin-box">
+  <h2>Admin Panel</h2>
+
+  <input type="password" id="pass" placeholder="Parol">
+  <button onclick="login()">Kirish</button>
+
+  <div id="panel" class="hidden">
+    <input id="title" placeholder="Kino nomi">
+    <input id="category" placeholder="Kategoriya">
+    <input id="link" placeholder="Yuklab olish linki">
+    <button onclick="addMovie()">➕ Qo‘shish</button>
+
+    <ul id="list"></ul>
+  </div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
